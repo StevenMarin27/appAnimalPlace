@@ -197,14 +197,14 @@
 
     <TextView
         android:id="@+id/usuario_sesion"
-        android:layout_width="109dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="213dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
