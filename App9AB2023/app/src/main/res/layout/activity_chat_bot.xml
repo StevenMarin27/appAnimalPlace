@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    tools:context=".ChatBot">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVchats"
+        android:layout_width="409dp"
+        android:layout_height="669dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="42dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_send"
+        app:backgroundTint="@color/fab_color"
+        app:fabCustomSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/idEdtMen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:tint="@color/white" />
+
+    <EditText
+        android:id="@+id/idEdtMen"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese su consulta"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#031D50"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="158dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="4dp"
+            android:text="Chatbot"
+            android:textColor="#E8E7E7"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
