@@ -19,6 +19,12 @@
     <string name="lbl_num">1234567890</string>
     <string name="lbl_float">1234567890.,</string>
     <string name="lbl_fecha">1234567890/</string>
+    <string name="lbl_cedula">Cédula</string>
+    <string name="plh_cedula">Ingrese su cédula</string>
+    <string name="plh_contraseña">Ingrese la contraseña</string>
+    <string name="lbl_confirmacion">Confirmar contraseña:</string>
+    <string name="plh_confirmarpass">Confirme la contraseña</string>
+    <string name="btn_registro">Registrarse</string>
 
 
 </resources>

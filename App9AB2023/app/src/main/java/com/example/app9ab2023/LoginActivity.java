@@ -120,6 +120,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    public void IraRegistro(View v) {
+        Intent i = new Intent(this, RegistroActivity.class);
+        startActivity(i);
+    }
+
     public void IraFb(View v){
         String url = "https://www.facebook.com/veterinariaanimalplace";
         Uri uri = Uri.parse(url);
