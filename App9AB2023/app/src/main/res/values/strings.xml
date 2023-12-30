@@ -19,11 +19,15 @@
     <string name="lbl_num">1234567890</string>
     <string name="lbl_float">1234567890.,</string>
     <string name="lbl_fecha">1234567890/</string>
-    <string name="lbl_cedula">Cédula</string>
-    <string name="plh_cedula">Ingrese su cédula</string>
+    <string name="lbl_emailre">Correo Electronico:</string>
+    <string name="plh_email">Ingrese su correo electronico</string>
     <string name="plh_contraseña">Ingrese la contraseña</string>
-    <string name="lbl_confirmacion">Confirmar contraseña:</string>
-    <string name="plh_confirmarpass">Confirme la contraseña</string>
+    <string name="lbl_firstname">Nombre:</string>
+    <string name="plh_name">Ingrese su nombre</string>
+    <string name="lbl_lastname">Apellido:</string>
+    <string name="plh_lastname">Ingrese su apellido</string>
+    <string name="lbl_cedula">Cédula:</string>
+    <string name="plh_cedula">Ingrese su cédula</string>
     <string name="btn_registro">Registrarse</string>
 
 

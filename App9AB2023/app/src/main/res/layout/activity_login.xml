@@ -34,16 +34,16 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
-            android:layout_width="311dp"
-            android:layout_height="303dp"
+            android:layout_width="314dp"
+            android:layout_height="331dp"
             android:layout_marginTop="-10dp"
             app:cardBackgroundColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.375">
+            app:layout_constraintVertical_bias="0.461">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -72,9 +72,11 @@
                     android:layout_width="270dp"
                     android:layout_height="39dp"
                     android:layout_marginTop="8dp"
+                    android:autoText="false"
                     android:ems="10"
                     android:hint="@string/plh_usuario"
                     android:inputType="textPersonName"
+                    android:singleLine="false"
                     android:theme="@style/HintStyle"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.49"
@@ -111,34 +113,61 @@
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="142dp"
-                    android:layout_height="70dp"
+                    android:layout_width="127dp"
+                    android:layout_height="53dp"
                     android:layout_gravity="center"
                     android:backgroundTint="#3F51B5"
                     android:text="@string/btn_ingresar"
                     android:textAlignment="center"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.112"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.931" />
+                    app:layout_constraintVertical_bias="0.769" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="138dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="#1FD131"
+                    android:onClick="IraRegistro"
+                    android:text="REGISTRATE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.877"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.77" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿No tienes una cuenta?"
+                    android:textColor="#0B0B0B"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/button2"
+                    app:layout_constraintHorizontal_bias="0.576"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button"
+                    app:layout_constraintVertical_bias="0.239" />
+
+                <TextView
+                    android:id="@+id/registrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="IraRecuperar"
+                    android:text="@string/a_registro"
+
+                    android:textAlignment="textEnd"
+                    android:textColor="#00E91E63"
+                    tools:layout_editor_absoluteY="310dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/registrate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="312dp"
-            android:onClick="IraRecuperar"
-            android:text="@string/a_registro"
-
-            android:textAlignment="textEnd"
-            android:textColor="#00E91E63"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="-16dp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -154,24 +183,10 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="0dp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="141dp"
-            android:layout_height="54dp"
-            android:backgroundTint="#1FD131"
-            android:onClick="IraRegistro"
-            android:text="REGISTRATE"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.519"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.845" />
-
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="49dp"
-            android:layout_height="53dp"
+            android:layout_width="54dp"
+            android:layout_height="57dp"
             android:onClick="IraIg"
             android:src="@drawable/instag"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -179,20 +194,20 @@
             app:layout_constraintHorizontal_bias="0.63"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.964" />
+            app:layout_constraintVertical_bias="0.944" />
 
         <ImageView
             android:id="@+id/imagfb"
-            android:layout_width="49dp"
-            android:layout_height="53dp"
+            android:layout_width="54dp"
+            android:layout_height="57dp"
             android:onClick="IraFb"
             android:src="@drawable/face"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.377"
+            app:layout_constraintHorizontal_bias="0.366"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.964" />
+            app:layout_constraintVertical_bias="0.944" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

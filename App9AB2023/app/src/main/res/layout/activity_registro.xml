@@ -29,21 +29,22 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="476dp">
+        android:layout_height="504dp">
+
 
         <androidx.cardview.widget.CardView
-            android:layout_width="322dp"
-            android:layout_height="382dp"
+            android:layout_width="305dp"
+            android:layout_height="421dp"
             android:layout_marginTop="-10dp"
             app:cardBackgroundColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.529"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.559">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="305dp"
                 android:layout_height="match_parent">
 
 
@@ -51,103 +52,67 @@
                     android:id="@+id/textView5"
                     android:layout_width="274dp"
                     android:layout_height="29dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/lbl_cedula"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lbl_emailre"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/et_cedula"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.382"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <EditText
-                    android:id="@+id/et_cedula"
-                    android:layout_width="256dp"
-                    android:layout_height="41dp"
-                    android:layout_marginTop="4dp"
-                    android:ems="10"
-                    android:hint="@string/plh_cedula"
-                    android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.545"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="276dp"
-                    android:layout_height="29dp"
-                    android:layout_marginTop="124dp"
+                    android:layout_width="269dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="84dp"
                     android:text="@string/lbl_pass"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView14"
-                    android:layout_width="269dp"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="216dp"
-                    android:text="@string/lbl_confirmacion"
+                    android:layout_width="271dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="160dp"
+                    android:text="@string/lbl_firstname"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.433"
+                    app:layout_constraintHorizontal_bias="0.441"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/et_pass"
                     style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
-                    android:layout_width="259dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="152dp"
+                    android:layout_width="250dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="112dp"
                     android:ems="10"
                     android:hint="@string/plh_contraseña"
                     android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHint="#810C0C0C"
+                    android:textSize="16sp"
                     android:theme="@style/HintStyle"
+                    android:visibility="visible"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.65"
+                    app:layout_constraintHorizontal_bias="0.486"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
-                    android:id="@+id/et_pass4"
-                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
-                    android:layout_width="255dp"
-                    android:layout_height="41dp"
-                    android:layout_marginTop="248dp"
-                    android:ems="10"
-                    android:hint="@string/plh_confirmarpass"
-                    android:inputType="textPassword"
-                    android:theme="@style/HintStyle"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.671"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/registrate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="IraRecuperar"
-                    android:text="@string/a_registro"
-
-                    android:textAlignment="textEnd"
-                    android:textColor="#00E91E63"
-                    tools:layout_editor_absoluteX="-16dp"
-                    tools:layout_editor_absoluteY="6dp" />
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="280dp"
-                    android:layout_height="46dp"
+                    android:layout_width="264dp"
+                    android:layout_height="56dp"
                     android:layout_gravity="center"
                     android:backgroundTint="#3F51B5"
                     android:onClick="IraLogin"
@@ -155,25 +120,126 @@
                     android:textAlignment="center"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.619"
+                    app:layout_constraintHorizontal_bias="0.487"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.895" />
+                    app:layout_constraintVertical_bias="0.958" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="268dp"
+                    android:layout_height="23dp"
+                    android:text="@string/lbl_lastname"
+                    android:textColor="#0C0C0C"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.324"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.565" />
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="246dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="@string/plh_lastname"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textColorHint="#810C0C0C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.654" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="68dp"
+                    android:layout_height="31dp"
+                    android:text="@string/lbl_cedula"
+                    android:textColor="#050505"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.067"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.743" />
+
+                <EditText
+                    android:id="@+id/editTextNumberSigned"
+                    android:layout_width="242dp"
+                    android:layout_height="43dp"
+                    android:ems="10"
+                    android:hint="@string/plh_cedula"
+                    android:inputType="numberSigned"
+                    android:textColor="#000000"
+                    android:textColorHint="#810C0C0C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.812" />
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="256dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="188dp"
+                    android:ems="10"
+                    android:hint="@string/plh_name"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textColorHint="#810C0C0C"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.551"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/emailre"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="261dp"
+                    android:layout_height="44dp"
+                    android:ems="10"
+                    android:hint="@string/plh_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#810C0C0C"
+                    android:textColorHint="#810C0C0C"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.569"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.092" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
-
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="269dp"
-            android:layout_height="38dp"
+            android:layout_width="219dp"
+            android:layout_height="33dp"
             android:text="CREAR CUENTA"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
