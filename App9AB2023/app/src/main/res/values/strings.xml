@@ -4,15 +4,15 @@
     <!-- ASDDAS -->
     <string name="lbl_saludar">HOLAAAAAAS!!</string>
     <string name="nombreapp">Animal Place</string>
-    <string name="plh_usuario">Ingrese el usuario</string>
-    <string name="plh_pass">Ingrese la contraseña</string>
+    <string name="plh_usuario">Ingrese su usuario</string>
+    <string name="plh_pass">Ingrese su contraseña</string>
 
-    <string name="lbl_usuario">Usuario :</string>
-    <string name="lbl_pass">Contraseña :</string>
+    <string name="lbl_usuario">USUARIO :</string>
+    <string name="lbl_pass">CONTRASEÑA :</string>
 
     <string name="a_registro">REGISTRATE </string>
 
-    <string name="btn_ingresar">INICIE SESIÓN</string>
+    <string name="btn_ingresar">INICIAR SESIÓN</string>
 
 
     <string name="lbl_alfab">abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQURSTUVWXYZ</string>
@@ -21,6 +21,7 @@
     <string name="lbl_fecha">1234567890/</string>
     <string name="lbl_emailre">Correo Electronico:</string>
     <string name="plh_email">Ingrese su correo electronico</string>
+    <string name="lbl_pass2">Contraseña:</string>
     <string name="plh_contraseña">Ingrese la contraseña</string>
     <string name="lbl_firstname">Nombre:</string>
     <string name="plh_name">Ingrese su nombre</string>
@@ -28,7 +29,7 @@
     <string name="plh_lastname">Ingrese su apellido</string>
     <string name="lbl_cedula">Cédula:</string>
     <string name="plh_cedula">Ingrese su cédula</string>
-    <string name="btn_registro">Registrarse</string>
+    <string name="btn_registro">Registrarte</string>
 
 
 </resources>
