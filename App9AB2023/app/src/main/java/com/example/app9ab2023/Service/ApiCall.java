@@ -10,7 +10,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 public class ApiCall {
 
     private static DataApi single_instance = null;
-    public static String baseurl = "https://6b20-2800-bf0-8283-b56-4864-4708-aaed-8cf4.ngrok-free.app/";
+    public static String baseurl = "https://ca38-2800-bf0-8283-b56-65ec-8c8a-2d03-b456.ngrok-free.app/";
 
     public static DataApi getInstance(){
         if (single_instance == null){
